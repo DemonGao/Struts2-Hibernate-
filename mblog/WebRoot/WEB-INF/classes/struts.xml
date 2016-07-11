@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!--解决乱码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<package name="LoginAction" extends="struts-default" namespace="/user">
+		<action name="*_*" class="com.mblog.action.{1}Action" method="{2}">
+			<result name="success">/myblog/index.jsp</result>
+			<result name="input">/myblog/page/login.jsp</result>
+		</action>
+	</package>
+	<package name="Json" extends="struts-default,json-default"
+		namespace="/json">
+		<action name="*_*" class="com.mblog.action.Articlescrap.{1}Action"
+			method="{2}">
+			<result type="json">
+				<!-- Struts 2支持JSONP，只需要在result中配置相应的属性即可 Struts2中配置的callbackParameter值要和页面AJAX调用参数中的jsonp的值一样 -->
+				<param name="callbackParameter">callback</param>
+				<!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+	</package>
+	<package name="struts2" extends="struts-default" namespace="/Articlescrap">
+		<action name="*_*" class="com.mblog.action.Articlescrap.{1}Action"
+			method="{2}">
+			<result name="success">/myblog/page/userBlog.jsp</result>
+			<result name="input">/upload.jsp</result>
+		</action>
+	</package>
+
+	<package name="admin" extends="struts-default" namespace="/admin">
+		<action name="*_*" class="com.mblog.action.{1}Action" method="{2}">
+			<result name="success">/admin/admin.jsp</result>
+			<result name="input">/fail.jsp</result>
+		</action>
+	</package>
+
+	<package name="Userlist" extends="struts-default" namespace="/userlist">
+		<!-- <action name="*_*" class="com.mblog.action.{1}Action" method="{2}"> 
+			<result name="success">/admin/page/userlist.jsp</result> <result name="input">/fail.jsp</result> 
+			</action> -->
+		<action name="UserQuery" class="com.mblog.action.UserAction"
+			method="queryUser">
+			<result name="success">/admin/page/userlist.jsp</result>
+			<result name="input">/fail.jsp</result>
+		</action>
+		<action name="User*" class="com.mblog.action.UserAction"
+			method="{1}">
+			<result type="chain" name="success">UserQuery</result>
+			<result name="input">/fail.jsp</result>
+		</action>
+	</package>
+
+
+
+	<package name="struts21" extends="struts-default" namespace="/Article">
+		<action name="del" class="com.mblog.action.Articlescrap.ArticleAction"
+			method="del">
+			<result name="success">/admin/page/lookthrough.jsp</result>
+			<result name="input">/fail.jsp</result>
+		</action>
+	</package>
+
+
+</struts>    

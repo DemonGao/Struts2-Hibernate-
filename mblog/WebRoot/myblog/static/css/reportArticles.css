@@ -1,0 +1,114 @@
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	z-index: 1041;
+	box-sizing: border-box;
+}
+.float-right{
+	float: right;
+}
+.content{
+	background-color: #D9EDF7;
+	padding-top: 30px;
+}
+.model_as{
+	box-sizing: border-box;
+	width: 800px;
+	margin: 0px auto;
+	/*border: 5px solid #FFFFFF;*/
+	/*background-color: #FFFFFF;*/
+}
+.model_as-title {
+	/*width: 98.5%;*/
+	width: 100%;
+	margin: 0 auto;
+	background-color: #FCF8E3;
+	border-radius: 10px 10px 0 0;
+	border: 1px solid #f2f2f2;
+	padding: 10px 0;
+}
+.model_as-title h4{
+	margin: 0;
+	text-indent: 1em;
+	font-family: "楷体";
+}
+.model_as-content{
+	/*padding: 10px 0;*/
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #FFFFFF;
+	/*border: 10px solid #FCF8E3;*/
+	/*border-bottom-color:transparent ;*/
+}
+.model_as-cont-form{
+	width: 98.5%;
+	margin: 0 auto;
+	border: 1px solid #F2F2F2;
+	border-top-color: transparent;
+	border-radius:0 0 5px 5px ;
+}
+
+.model_as-cont-form input.title{
+	display: block;
+	box-sizing: border-box;
+	width: 90%;
+	margin: 10px auto 0;
+	/*color: rgb(255, 128, 0);*/
+	border: 2px dashed #CCCCCC;
+	outline:none;
+	font-size: 16px;
+	padding: 8px 0;
+	text-align: center;
+}
+.model_as-cont-form input.title:focus,.model_as-cont-form input.title:hover{
+	border: 2px solid rgb(255, 128, 0);
+}
+.model_as-cont-form  hr{
+	width: 95%;
+	text-align: center;
+}
+.model_as-cont-form .contentBox textarea.cont{
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+	height: 400px;
+	resize: none;
+	border: none;
+	outline:none;
+}
+.model_as-cont-form .type{
+	background-color: #F2F2F2;
+	padding:0 20px;
+}
+.model_as-cont-form .type .form-control{
+	width: 103.2px;
+	display: inline-block;
+}
+.model_as-footer{
+	background-color:#FFFFFF;
+	padding:0 0.75%;
+	margin: 0 auto;
+}
+.model_as-footer-publish{
+	padding: 10px;
+}
+.model_as-footer-publish p{
+	text-align: center;
+	margin: 0;
+}
+.model_as-footer-publish p button{
+	margin-right: 30px;
+}
+.spacing1{
+	margin-left: 1em;
+}
+
+
+/*图片上传*/
+.demo{
+    margin-top:0px;
+    margin-bottom:80px;
+}
+.upload_preview{
+    width: 100%;
+}

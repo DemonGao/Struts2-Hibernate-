@@ -1,0 +1,113 @@
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+#content{
+	height: 624px;
+	margin-bottom: 0;
+	background-image: url(../img/loginbg.jpg);
+	background-position: center center;
+	background-size: 100% 100%;
+}
+#content .container{
+	padding: 0;
+}
+.form-register{
+	box-sizing: border-box;
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	opacity: .9;
+	border-radius: 20px;
+}
+.form-register-heading{
+	/*color:#FFFFFF;*/
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.form-register-group .col-xs-3 a{
+	color: #FFFFFF;
+}
+
+.form-register-group .col-xs-3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+section{
+	width: 560px;
+}
+section > p.pinput{
+	/*margin-top: 30px;*/
+	text-indent: 2em;
+}
+section > p.pinput:nth-of-type(7),section > p.pinput:nth-child(13){
+	text-indent: 0em;
+}
+section > p.pinput:nth-child(23){
+	text-indent: 0em;
+}
+.checkresult{
+	text-indent: 5.5em;
+	margin:10px 0px; 
+}
+section input{
+	margin-left: 20px;
+	width: 400px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius:5px;
+	text-indent:.5em;
+}
+section button{
+	width: 76px;
+	height: 40px;
+	background-color: rgb(47,121,186);
+	border: none;
+	border-radius: 5px;
+}
+section input[type="file"]{
+	display:inline-block;
+}
+.pbtn{
+	text-align: center;
+}
+section button:hover{
+	cursor: pointer;
+}
+
+#checkresult{
+	margin-top: 10px;
+	text-indent: 3.5em;
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #333;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 30px;
+    margin-left:40px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}

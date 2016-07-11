@@ -1,0 +1,359 @@
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	z-index: 1041;
+	box-sizing: border-box;
+}
+.float-right{
+	float: right;
+}
+.content{
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+/*修改幻灯片高度大小*/
+.carousel-inner > .item{
+	height:300px;
+}
+/*修改幻灯片切换圆圈的位置*/
+.carousel-indicators {
+	bottom: 0;
+}
+.carousel-control{
+	padding-top: 125px;
+	font-size: 50px;
+}
+
+.content{
+	background-color: #f1f1f1;
+}
+.content > .container{
+}
+
+
+/*内容栏*/
+.content >.container{
+	width: 1024px;
+	margin: 10px auto 0px;
+}
+.content >.container::after{
+	/*清除浮动*/
+	clear:both;
+	content:'.';
+	display:block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+.content >.container>h2{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	font-weight: bold;
+    line-height: 36px;
+    color: #333;
+    background: url(../img/h_line.jpg) repeat-x 20px center;
+	/*border-bottom: #db6d4c 4px solid;
+	margin-bottom: 30px;*/
+}
+.content >.container>h2 p{
+	background: #FFFFFF;
+	width: 60px;
+}
+.content >.container>h2 span{
+	color: #FE5187;
+}
+.side-bar{
+	width: 28%;
+	float: right;
+	box-sizing: border-box;
+}
+.content-bar{
+	width: 72%;
+	float: left;
+	padding-top: 10px;
+}
+
+
+/*天气css*/
+#weather{
+	box-sizing: border-box;
+	/*width:100%;*/
+	margin: 10px;
+	border: 10px solid #FFFFFF;
+	
+}
+.weather-nowday{
+	background-image: url(../img/weather_bg.png);
+	background-size: 100% 100%;
+	background-position:center center;
+	color:#FFFFFF;
+	/*border-radius: 10px;*/
+}
+.weather-nowday .title,.weather-nowday h2,.weather-nowday .info{
+	padding: 10px;
+}
+/*天气顶部时间星期地点*/
+.weather-nowday .title span:nth-child(4){
+	float: right;
+}
+.weather-nowday .title span:nth-child(3){
+	float: right;
+	font-size: 12px;
+	vertical-align: top;
+	line-height: 16px;
+}
+.weather-nowday .title span:nth-child(3) i{
+	text-decoration: none;
+	cursor: pointer;
+	color: #83D2ED;
+	font-style: normal;
+	line-height: 20px;
+}
+.weather-nowday .title span:nth-child(1){
+	margin-right: 10px;
+}
+.weather-nowday img{
+}
+.weather-nowday-figcaption{
+	
+}
+.weather-nowday-figcaption h2{
+	margin-top: 80px;
+	text-align: center;
+}
+.weather-nowday-figcaption h2::after{
+	/*清除浮动*/
+	clear:both;
+	content:'.';
+	display:block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+.weather-nowday-figcaption h2 span{
+	/*float: left;*/
+}
+.weather-nowday-figcaption h2 span:nth-child(1){
+	display: inline-block;
+	width: 100%;
+	font-size: 3.5em;
+}
+.weather-nowday-figcaption h2 span:nth-child(2){
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	top: -50px;	
+	left: 70px;
+}
+.weather-nowday-figcaption h2 span:nth-child(2) p{
+	width: 30px;
+	vertical-align: top;
+	overflow: hidden;
+	display: inline-block;
+}
+.weather-nowday-figcaption .info{
+	text-align: center;
+}
+.weather-nowday-figcaption .info img{
+	width: 25px;
+}
+.weather-nowday-figcaption .info span{
+	display: inline-block;
+	vertical-align: top;
+	height: 25px;
+	line-height: 25px;
+}
+.weather-nowday-figcaption .state{
+	box-sizing: border-box;
+	border-top: 2px solid #FFFFFF;
+	padding: 5px 10px;
+}
+.weather-nowday-figcaption .state p{
+	font-size: 12px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: top;	
+}
+
+
+/*天气输入*/
+.selectcity{
+	position: relative;
+	top: 0;
+	float: right;
+	color: #000000;
+}
+#Icityname{
+	width: 80px;
+	text-indent: .25em;
+}
+
+
+/*日志*/
+.articlescrap,.articlescrap_say{
+	border: 10px solid #FFFFFF;
+	margin-bottom: 15px;
+	height: 170px;
+	background-color: #FFFFFF;
+}
+/*左边(照片)*/
+.articlescrap figure{
+	width: 210px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.articlescrap figure img{
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+}
+.articlescrap figure:hover img{
+	transform: scale(1.1);
+	transition: all .5s;
+}
+/*右边(内容)*/
+.articlescrap >div{
+	box-sizing: border-box;
+	height: 100%;
+}
+.articlescrap-title{
+	margin: 0;
+	margin-bottom: 10px;
+	line-height: inherit;
+}
+.articlescrap-title a{
+	background-color: #71c39b;
+	color: #FFFFFF;
+	padding:2px 10px ;
+	text-decoration: none;
+}
+.articlescrap-title .time{
+	float: right;
+	font-size: 16px;
+	color: #333;
+}
+.articlescrap-title .time i.iconfont{
+	color: #83D2ED;
+	font-size: 16px;
+	vertical-align: text-top;
+	line-height: 14px;
+	margin-right: 5px;
+}
+.articlescrap-text{
+	color: #333;
+	height: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+}
+.articlescrap-data span{
+	margin-right: 10px;
+}
+
+.articlescrap-data .author .iconfont{
+	color:#40E0D0
+}
+.articlescrap-data .author a{
+	/*color:#40E0D0;*/
+	text-decoration: none;
+}
+.articlescrap-data .type .iconfont{
+	color: #F8A8A8;
+}
+.articlescrap-data .type a{
+	color:#759b08 ;
+	text-decoration: none;
+}
+.articlescrap-data .lookall{
+	float: right;
+}
+.articlescrap-data .lookall a{
+	text-decoration: none;
+	background-color: #FD8A61;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+/*说说*/
+.articlescrap_say{
+	height:inherit;
+}
+.as-head::after{
+	/*清除浮动*/
+	clear:both;
+	content:'';
+	display:block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+.as-head{
+	min-height: 50px;
+}
+.as-user-pic{
+	box-sizing: border-box;
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-position: center center;
+	background-size: 100% 100%;
+	border-radius: 5px;
+}
+.as-user-info{
+	box-sizing: border-box;
+	margin-left: 70px;
+	
+}
+.as-nick{
+	width: 100%;
+}
+.as-nick .as-type a{
+	color: #759b08;
+    text-decoration: none;
+}
+.as-nick .as-type .iconfont{
+	color: #F8A8A8;
+}
+.as-nick .as-name{
+	display: inline-block;
+	margin-right: 30px;
+}
+.as-nick .as-like{
+	text-decoration: none;
+	float: right;
+}
+.as-nick .as-like .iconfont{
+	color: red;
+}
+.info-detail .as-time .time{
+	color: #333;
+}
+.info-detail .as-time .time .iconfont{
+	color: #83D2ED;
+	font-size: 16px;
+    vertical-align: text-top;
+    line-height: 14px;
+    margin-right: 5px
+}
+.as-nick .as-name a{
+	text-decoration: none;
+}
+.articlescrap_say-text{
+	margin: 0;
+	color: #333;
+}
+
+footer{
+	position: relative;
+	background-color: #000000;
+	box-sizing: border-box;
+	padding: 20px 0;
+}
+footer p{
+	text-align: center;
+	margin: 0;
+	color: #FFFFFF;
+}

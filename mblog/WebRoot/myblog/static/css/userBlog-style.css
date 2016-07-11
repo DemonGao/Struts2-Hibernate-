@@ -1,0 +1,265 @@
+header{
+	position: absolute;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	background-color: #000;
+	opacity: .70;
+	color: #fff;
+	z-index: 999;
+}
+header a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.header-title,.header-nav{
+	display: inline-block;
+	height: 60px;
+	vertical-align: top;
+	
+}
+.header-title{
+	padding-top: 10px;
+	margin-left: 180px;
+}
+.header-title h2{
+	
+	font-size: 25px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "黑体";
+	letter-spacing: 8px;
+}
+.header-title span{
+	display: block;
+	height: 15px;
+	font-size: 14px;
+	font-style: italic;
+	word-spacing: 7px;
+}
+.header-nav{
+	float: right;
+	margin-right: 180px;
+}
+.header-nav .header-navbar li{
+	float: left;
+	/*margin: 0 20px;*/
+}
+.header-navbar li a{
+	padding: 12px 20px 0;
+	display: block;
+	text-align: center;
+	transition: all .5s;
+}
+
+.header-navbar li i{
+	position: relative;
+	top: 0;
+	font-size: 32px;
+	transition: all .5s;
+}
+.header-navbar li p{
+	position: relative;
+	top: 0px;
+	/*width: 48px;*/
+	text-align: center;
+	transition: all .5s;
+	opacity: 0;
+}
+
+.header-navbar li:hover a{
+	background-color: red;
+	transition: all .5s;
+}
+.header-navbar li:hover i{
+	top: -45px;
+	opacity: 0;
+	transition: all .5s;
+	
+}
+.header-navbar li:hover p{
+	top: -22px;
+	transition: all .5s;
+	opacity: 1;
+}
+/*内容区*/
+.container{
+	position: relative;
+	width: 100%;
+	z-index: 0;
+	padding: 0;
+	
+	background-color: #f1f1f1;
+}
+.container .blogImage{
+	background-image: url(../img/header.jpg);
+	background-position: center center;
+	background-size: 100%;
+	width: 100%;
+	height: 400px;
+}
+.blogImage p{
+	font-size: 40px;
+	width: 40px;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+.blogImage p:first-child{
+	position: absolute;
+	top: 100px;
+	left: 30%;
+	animation: blogImageP1 3s infinite;
+}
+@keyframes blogImageP1{
+	0%{top: 100px;}
+	50%{top: 120px;}
+}
+@keyframes blogImageP2{
+	0%{top: 160px;}
+	50%{top: 140px;}
+}
+.blogImage p:last-child{
+	position: absolute;
+	top: 160px;
+	left: 35%;
+	animation: blogImageP2 3s infinite;
+}
+/*浮出层博主信息*/
+/*不可拖拽 拖拽样式删除*/
+.surface .resizeBR {
+	background: none;
+}
+.surface .resizeL, .surface .resizeR ,.surface .resizeB,.surface .resizeT{
+	cursor:inherit;
+}
+/*样式修改*/
+.surface{
+	position: fixed;
+	/*border: 1px solid #16324A;*/
+	z-index: 99999;
+	background: #000000;
+	opacity: 0;
+	transition: 1s all;
+	
+	
+}
+.surface-head{
+	position: relative;
+	top: 0px;
+	display: block;
+	background: #000;
+	height: 260px;
+	background-image: url(../img/hudie.png);
+	background-repeat: no-repeat;
+}
+.surface-head-title{
+	position:relative;
+	top: 80px;
+	width: 160px;
+	height: 160px;
+	margin: auto;
+	border-radius: 100%;
+	overflow: hidden;
+	
+}
+.surface-head-title a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/IMG_5897.JPG);
+	background-size: 100% 100%;
+	background-position: center center;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+}
+.surface-head-title a:hover span{
+	margin-top: 105px;
+}
+.surface-head-title a span{
+	display: block;
+	width: 100%;
+	margin-top: 160px;
+	height: 55px;
+	line-height: 55px;
+	color: #FFFFFF;
+	background: rgba(0, 0, 0, .5);
+	
+	transition: all .2s;
+}
+.surface-content{
+	padding: 0px;
+}
+
+.surface-content-say{
+	background-color: #E41635;
+	padding: 44px 20px;
+	color: #fff;
+	text-shadow: 1px 1px rgba(0,0,0,.3);
+}
+.surface-content-say h1{
+ 	font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+ }
+ .surface-content-say p{
+ 	font-size: 12px;
+ 	text-indent: 2em;
+ }
+.surface-content-info{
+	color: #FFFFFF;
+	margin: 20px 0;
+	line-height: 30px;
+}
+.surface-content-info p{
+	padding-left: 40px;
+}
+.surface-content-info p:hover{
+	background-color: rgba(255,255,255,.1);
+}
+.surface-content-info p i{
+	margin-right:10px ;
+}
+footer{
+	position: absolute;
+	width: 100%;
+	height: 110px;
+	box-sizing: border-box;
+	/*background-color: #0f1240;*/
+	background-color: rgb(50, 53, 62);
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 20px;
+}
+.footer-title{
+	font-family: "微软雅黑";
+	font-size: 21px;
+    height: 21px;
+    margin-bottom: 10px;
+}
+.footer-word{
+	font-size: 14px;
+	line-height: 16px;
+}
+.footer-end{
+	box-sizing: border-box;
+	padding: 0px 40px;
+	font-weight: 800;
+}
+
+.footer-end p span:nth-child(1){
+	float: left;
+}
+.footer-end p span:nth-child(2){
+	float: right;
+}
+.footer-end p span:nth-child(2) a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+a:link, a:visited{
+	text-decoration: none;
+}
+
